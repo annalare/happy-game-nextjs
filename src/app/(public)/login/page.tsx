@@ -26,21 +26,11 @@ function LoginForm() {
         <div className="space-y-4">
           <Button
             onClick={() => signIn("google", { callbackUrl })}
-            className="w-full bg-primary-green-base hover:bg-primary-green-lighter-1 text-neutral-950 font-medium h-12 text-base"
+            className="w-full text-neutral-950 font-medium h-12 text-base"
           >
             <Mail className="h-5 w-5" />
             Continuar com Google
           </Button>
-        </div>
-
-        <div className="text-center text-sm text-neutral-600 dark:text-neutral-300">
-          Ainda não tem conta?
-          <Link
-            href="/cadastro"
-            className="text-primary-green-base hover:text-primary-green-lighter-1 font-medium transition-colors"
-          >
-            Cadastre-se aqui
-          </Link>
         </div>
       </div>
     </div>

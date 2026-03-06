@@ -15,12 +15,12 @@ export function CTASection() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/cadastro">
-              <Button size="lg" className="text-lg px-8">
+              <Button size="large" className="px-8">
                 Inscreva-se
               </Button>
             </Link>
             <Link href="/plataforma">
-              <Button variant="outline" size="lg" className="text-lg px-8">
+              <Button variant="secondary" size="large" className="px-8">
                 Saiba mais
               </Button>
             </Link>

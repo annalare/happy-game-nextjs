@@ -37,7 +37,7 @@ export function CTASection() {
               animationFillMode: "forwards",
             }}
           >
-            <Button size="lg" asChild>
+            <Button size="large" asChild>
               <a
                 href="https://instagram.com"
                 target="_blank"
@@ -49,7 +49,7 @@ export function CTASection() {
               </a>
             </Button>
 
-            <Button size="lg" variant="outline" asChild>
+            <Button size="large" variant="secondary" asChild>
               <Link href="/">Voltar para Home</Link>
             </Button>
           </div>

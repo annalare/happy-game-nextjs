@@ -1,4 +1,4 @@
-import Header from "@/app/(public)/_components/Header";
+import { PublicNavbar } from "@/app/(public)/_components/PublicNavbar";
 import Footer from "@/app/(public)/_components/Footer";
 
 export default function PublicLayout({
@@ -8,7 +8,7 @@ export default function PublicLayout({
 }>) {
   return (
     <main className="mx-auto w-full flex-1 h-[calc(100vh-72px-330px)]">
-      <Header />
+      <PublicNavbar />
       {children}
       <Footer />
     </main>

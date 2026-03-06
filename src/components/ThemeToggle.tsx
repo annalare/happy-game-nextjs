@@ -65,30 +65,28 @@ export function ThemeToggle() {
   if (!mounted) {
     return (
       <Button
-        variant="outline"
-        size="icon"
-        className="border-primary-green-base bg-transparent"
+        variant="secondary"
+        className="h-9 w-9 min-h-9 min-w-9 p-2 border border-border-primary"
         aria-label="Toggle theme"
         disabled
       >
-        <div className="w-5 h-5" />
+        <div className="size-5" />
       </Button>
     );
   }
 
   return (
     <Button
-      variant="outline"
-      size="icon"
+      variant="secondary"
+      className="h-9 w-9 min-h-9 min-w-9 p-2 border border-border-primary"
       onClick={handleToggle}
-      className="border-primary-green-base bg-transparent hover:bg-background-primary"
-      aria-label={`Current theme: ${theme}. Click to toggle.`}
-      title={`Theme: ${theme}`}
+      aria-label={`Tema: ${theme}. Clique para alternar.`}
+      title={`Tema: ${theme}`}
     >
       {theme === "light" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className="size-5" />
       ) : (
-        <Moon className="h-5 w-5" />
+        <Moon className="size-5" />
       )}
     </Button>
   );
