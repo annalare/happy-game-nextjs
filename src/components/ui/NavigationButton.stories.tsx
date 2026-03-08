@@ -17,22 +17,23 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { href: "/feed", icon: "Home", name: "Feed" },
+  args: { href: "/feed", icon: "Home", name: "Feed", isActive: true },
 };
 
 export const Acervo: Story = {
-  args: { href: "/acervo", icon: "Gamepad2", name: "Acervo" },
+  args: { href: "/acervo", icon: "Gamepad2", name: "Acervo", isActive: false },
 };
 
 export const Group: Story = {
-  args: { href: "/feed", icon: "Home", name: "Feed" },
+  args: { href: "/feed", icon: "Home", name: "Feed", isActive: true },
   render: () => (
     <div className="flex gap-2">
-      <NavigationButton href="/feed" icon="Home" name="Feed" />
+      <NavigationButton href="/feed" icon="Home" name="Feed" isActive />
       <NavigationButton
         href="/acervo"
         icon="Gamepad2"
         name="Acervo"
+        isActive={false}
         className="bg-brand-purple-100 text-brand-purple-800 [&_span:first-child]:bg-brand-purple-100 [&_span:first-child]:text-brand-purple-800"
       />
     </div>

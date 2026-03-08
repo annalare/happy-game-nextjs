@@ -24,8 +24,13 @@ export const Default: Story = {
     ),
     navItems: (
       <>
-        <NavigationButton href="/feed" icon="Home" name="Feed" />
-        <NavigationButton href="/acervo" icon="Gamepad2" name="Acervo" />
+        <NavigationButton isActive href="/feed" icon="Home" name="Feed" />
+        <NavigationButton
+          isActive={false}
+          href="/acervo"
+          icon="Gamepad2"
+          name="Acervo"
+        />
       </>
     ),
     rightActions: (
