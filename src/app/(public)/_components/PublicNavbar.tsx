@@ -18,6 +18,7 @@ const ROUTES = [
     name: "História",
     icon: "GalleryHorizontalEnd" as const,
   },
+  { href: "/dashboard", name: "Dashboard", icon: "LayoutDashboard" as const }, 
   { href: "/plataforma", name: "Plataforma", icon: "PanelsTopLeft" as const },
 ];
 
@@ -67,7 +68,10 @@ export function PublicNavbar() {
                 <Icon name="Menu" size={20} />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-bg-primary">
+            <SheetContent
+              side="right"
+              className="w-[300px] bg-bg-primary dark:bg-bg-primary"
+            >
               <nav className="flex flex-col items-center gap-6 mt-8">
                 {ROUTES.map((link) => {
                   const isActive = pathname === link.href;
